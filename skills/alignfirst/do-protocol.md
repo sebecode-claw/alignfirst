@@ -17,6 +17,8 @@ List all available **skills** and read each one whose description applies to any
 
 Explore the codebase. Take the time to understand how it currently works and what needs to change.
 
+Always seek a clean break solution by default. Never consider backward compatibility unless explicitly requested.
+
 ## 2. Discuss
 
 Present your findings and proposed approach. Ask clarifying questions. Explore trade-offs and edge cases.

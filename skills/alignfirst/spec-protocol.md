@@ -23,6 +23,8 @@ The discussion phase is MANDATORY. Remember that you are a newcomer to this proj
 
 Investigate the codebase yourself, find the relevant source code, think carefully, take the time to understand how it currently works and what has to be done. If the Context7 MCP is available, feel free to use it.
 
+Always seek a clean break solution by default. Never consider backward compatibility unless explicitly requested.
+
 ## Phase 2. Discussion Phase
 
 Engage in a thorough collaborative discussion covering:
