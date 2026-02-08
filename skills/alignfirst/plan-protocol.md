@@ -109,7 +109,7 @@ _Note: "Custom agent" refers to configured agent profiles in your environment (e
 _For all plans (single or specialized)_, add a final step named "Write a Handover Document" with this content:
 
 ```markdown
-Write a **handover document**. This document must contain the list of all files you updated. Also, summarize the changes made in a very concise way. Add only relevant information that will help your teammates understand what's new. Do not mention obvious information. It's not a course or a tutorial, if there is nothing to explain, then do not explain. Write this handover document in `{PLAN_FILE_PATH}.summary.md`. Avoid overwriting an existing file. Ignore lint errors (formatting issues) in this file.
+Write a **handover document**. This document must contain the list of all files you updated. Also, summarize the changes made in a very concise way. Add only relevant information that will help your teammates understand what's new. Do not mention obvious information. It's not a course or a tutorial, if there is nothing to explain, then do not explain. Write this handover document in `{PLAN_FILE_PATH}.summary.md`. Ignore lint errors (formatting issues) in this file.
 ```
 
 Note:
@@ -187,7 +187,7 @@ Write a **main plan handover document**. This document should:
    - State "Completed" if the plan was executed successfully
    - Detail any issues encountered during execution
 
-Keep this handover very short. Do not combine or repeat the content of individual handovers. Write this document in `{PLAN_FILE_PATH}.summary.md`. Avoid overwriting an existing file. Ignore lint errors (formatting issues) in this file.
+Keep this handover very short. Do not combine or repeat the content of individual handovers. Write this document in `{PLAN_FILE_PATH}.summary.md`. Ignore lint errors (formatting issues) in this file.
 
 ---
 
