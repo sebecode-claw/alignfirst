@@ -1,8 +1,6 @@
 # AlignFirst Skill
 
-**_Important: This is the v2 of AlignFirst (formerly Vibe Flow). AlignFirst is now distributed as an Agent Skill. If you work with a compatible agent, go ahead. For other agents, you want probably install the [v1](https://github.com/paleo/alignfirst/blob/v1/README.md)._**
-
-AlignFirst helps produce good plans that enable AI agents to code autonomously. It's distributed as an _Agent Skill_ and works well with:
+AlignFirst enables AI agents to write the code you would write. It's distributed as an _Agent Skill_ and works well with:
 
 - **GitHub Copilot**
 - **Cursor**
