@@ -9,8 +9,7 @@ AlignFirst enables AI agents to write the code you would write. It's distributed
 
 ## Get Started
 
-1. Ensure your agent uses a capable coding model.
-2. Give it **[this installation prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**.
+Give your agent **[this installation prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**.
 
 ## Using AlignFirst
 
