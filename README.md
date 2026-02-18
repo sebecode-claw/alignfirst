@@ -96,7 +96,7 @@ It can also work alongside AlignFirst:
 /al We need a documentation about [topic]. Use technical-documentation-authoring.
 ```
 
-## Installation, Migrations
+## Upgrades, Migrations
 
 - **[Upgrade from v1](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/upgrade-to-agent-skills.md)**: If you have an old `_docs/alignfirst/` installation, migrate to the Agent Skills standard
 - **[Install AlignFirst Skill](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**
