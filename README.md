@@ -7,11 +7,11 @@ AlignFirst enables AI agents to write the code you would write. It's distributed
 - **Claude Code**
 - **OpenAI Codex**
 
-## Get Started
+## Installation
 
 Give your agent **[this installation prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**.
 
-## Using AlignFirst
+## Usage
 
 ### Generate Technical Specification
 
