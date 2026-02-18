@@ -74,7 +74,7 @@ The agent will discuss it with you first, then work directly on the codebase. At
 
 ### About Agent Skills
 
-Agent Skills is an [open standard](https://agentskills.io/) that works out of the box in Claude Code. Editor support is still experimental. Here are the documentations:
+Agent Skills is an [open standard](https://agentskills.io/) that works out of the box in Claude Code. Here are the documentations:
 
 - [Copilot in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
 - [Cursor](https://cursor.com/docs/context/skills)
