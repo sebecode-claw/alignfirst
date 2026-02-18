@@ -12,20 +12,6 @@ AlignFirst enables AI agents to write the code you would write. It's distributed
 1. Ensure your agent uses a capable coding model.
 2. Give it **[this installation prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**.
 
-It will install the AlignFirst skill:
-
-```text
-{.claude|.github|.cursor|.codex|.gemini|.agent}/skills/alignfirst/
-├── SKILL.md
-├── README.md
-├── spec-protocol.md
-├── plan-protocol.md
-├── do-protocol.md
-└── description-protocol.md
-```
-
-Then, start using the workflow.
-
 ## Using AlignFirst
 
 ### Generate Technical Specification
