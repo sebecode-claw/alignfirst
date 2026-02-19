@@ -77,10 +77,9 @@ mkdir -p {SKILLS_DIR}/alignfirst/references
 
 **Important**: Use `curl -o "filename"` or `wget -O "filename"` to download files directly. Do NOT fetch file contents into your context.
 
-Fetch the following files into `{SKILLS_DIR}/alignfirst/`:
+Fetch the following file into `{SKILLS_DIR}/alignfirst/`:
 
 - [SKILL.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/SKILL.md)
-- [README.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/README.md)
 
 Fetch the following files into `{SKILLS_DIR}/alignfirst/references/`:
 
@@ -129,4 +128,9 @@ Follow the instructions in **[install-commands.md](https://raw.githubusercontent
 
 ## Done
 
-Tell the user that AlignFirst has been installed successfully, and point them to `{SKILLS_DIR}/alignfirst/README.md` for usage instructions.
+Tell the user that AlignFirst has been installed successfully. Briefly mention the available commands:
+
+- `/al` — discuss and implement a small task
+- `/alspec` — write a technical specification
+- `/alplan` — create implementation plans
+- `/aldescription` — generate a PR/MR description

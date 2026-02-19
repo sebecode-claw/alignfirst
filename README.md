@@ -7,11 +7,46 @@ AlignFirst enables AI agents to write the code you would write. It's distributed
 - **Claude Code**
 - **OpenAI Codex**
 
-## Installation
+## Installation (Automatic)
+
+This is the all-in-one-prompt installation. It downloads files and configures your project — you trust the prompt to run `curl` commands and edit your files.
 
 Give your agent **[this installation prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**.
 
+## Or, Post-Install Setup after a Manual Installation
+
+If you installed the skill files yourself (downloaded them or used a third-party skill manager), your project still needs to be configured. Give your agent this prompt:
+
+**Prompt to run:**
+
+```markdown
+I just installed the alignfirst skill. Please help me configure it:
+
+1. Create `_plans/.gitkeep` if it doesn't exist, and add `_plans/*` and `!_plans/.gitkeep` to `.gitignore` if needed.
+2. Check if `AGENTS.md` or `CLAUDE.md` exists. If one exists, use it. If neither exists, create `AGENTS.md`.
+3. Look at our git branches (`git branch -a`) to detect our ticket ID format (e.g., `ABC-###`, `PROJ-###`, or numeric).
+   - If no pattern is found, ask me for our ticket ID format.
+4. If there is a pattern for our ticket ID, add this section in `AGENTS.md` or `CLAUDE.md`:
+
+   ## Ticket ID
+
+   _Ticket ID_: Format is `{DETECTED_FORMAT}`. When not provided, deduce it from the branch name if possible—no need to confirm.
+
+5. Ensure it contains: "Always ignore the `_plans` directory when searching the codebase."
+6. Install commands by following the instructions in [install-commands.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-commands.md).
+```
+
 ## Usage
+
+### Align-and-Do Protocol (AAD)
+
+There is also a lighter prompt for small tasks without specs or plans. Here's how to trigger it:
+
+```markdown
+/al [something to do]
+```
+
+The agent will discuss it with you first, then work directly on the codebase. At the end, a `_plans/123/A1-AAD.summary.md` file will be written.
 
 ### Generate Technical Specification
 
@@ -45,15 +80,15 @@ Execute the plan `_plans/123/A2-main-plan.md`
 
 The agent executes the plan and writes `.summary.md` files.
 
-### Align-and-Do Protocol (AAD)
+### Generate PR/MR Description
 
-There is also a lighter prompt for small tasks without specs or plans. Here's how to trigger it:
+After implementation, generate a description summarizing the work done and a commit message:
 
 ```markdown
-/al [something to do]
+/aldescription
 ```
 
-The agent will discuss it with you first, then work directly on the codebase. At the end, a `_plans/123/A1-AAD.summary.md` file will be written.
+The agent reads all specs and summaries in the task directory, then writes a concise `_plans/123/B1-description.md` file with a functional description of what was done and a Conventional Commits message.
 
 ## Additional Information
 
@@ -85,11 +120,11 @@ It can also work alongside AlignFirst:
 /al We need a documentation about [topic]. Use technical-documentation-authoring.
 ```
 
-## Upgrades, Migrations
+## Migrations
 
-- **[Upgrade from v1](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/upgrade-to-agent-skills.md)**: If you have an old `_docs/alignfirst/` installation, migrate to the Agent Skills standard
 - **[Install AlignFirst Skill](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-alignfirst.md)**
 - **[Install Technical Documentation Authoring Skill](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-technical-documentation-authoring.md)**
+- **[Upgrade from v1](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/upgrade-to-agent-skills.md)**: If you have an old `_docs/alignfirst/` installation, migrate to the Agent Skills standard
 - **[Update Skills](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/update-skills.md)**: Update installed _AlignFirst_ and/or _Technical Documentation Authoring_ skills to the latest version
 
 ## License

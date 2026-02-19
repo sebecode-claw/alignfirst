@@ -66,9 +66,8 @@ mkdir -p {SKILLS_DIR}/alignfirst/references
 
 **Important**: Use `curl -o "filename"` or `wget -O "filename"` to download files directly. Do NOT fetch file contents into your context.
 
-Fetch the following files into `{SKILLS_DIR}/alignfirst/`:
+Fetch the following file into `{SKILLS_DIR}/alignfirst/`:
 
-- [README.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/README.md)
 - [SKILL.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/SKILL.md)
 
 Fetch the following files into `{SKILLS_DIR}/alignfirst/references/`:

@@ -51,7 +51,6 @@ mkdir -p {ALIGNFIRST_DIR}/references
 Fetch into `{ALIGNFIRST_DIR}/`:
 
 - [SKILL.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/SKILL.md)
-- [README.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/README.md)
 
 Fetch into `{ALIGNFIRST_DIR}/references/`:
 
