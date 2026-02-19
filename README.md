@@ -40,7 +40,7 @@ I just installed the alignfirst skill. Please help me configure it:
 
 ### Align-and-Do Protocol (AAD)
 
-There is also a lighter prompt for small tasks without specs or plans. Here's how to trigger it:
+This is a light prompt for small tasks without specs or plans, similar to the built-in "plan" mode of your agent. Here's how to trigger it:
 
 ```markdown
 /al [something to do]
