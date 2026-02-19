@@ -72,7 +72,7 @@ Wait for the user's choice before proceeding.
 Create the skill directory:
 
 ```bash
-mkdir -p {SKILLS_DIR}/alignfirst
+mkdir -p {SKILLS_DIR}/alignfirst/references
 ```
 
 **Important**: Use `curl -o "filename"` or `wget -O "filename"` to download files directly. Do NOT fetch file contents into your context.
@@ -81,10 +81,13 @@ Fetch the following files into `{SKILLS_DIR}/alignfirst/`:
 
 - [SKILL.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/SKILL.md)
 - [README.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/README.md)
-- [spec-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/spec-protocol.md)
-- [plan-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/plan-protocol.md)
-- [do-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/do-protocol.md)
-- [description-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/description-protocol.md)
+
+Fetch the following files into `{SKILLS_DIR}/alignfirst/references/`:
+
+- [spec-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/spec-protocol.md)
+- [plan-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/plan-protocol.md)
+- [aad-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/aad-protocol.md)
+- [description-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/description-protocol.md)
 
 ## Step 5 - Post-Install Setup
 

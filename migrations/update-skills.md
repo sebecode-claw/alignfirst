@@ -32,22 +32,33 @@ Note which skills are installed (old name, new name, or both) and their full pat
 
 ### If `alignfirst/SKILL.md` exists at path **{ALIGNFIRST_DIR}**:
 
-Delete all existing files in the alignfirst directory, then fetch the latest versions into `{ALIGNFIRST_DIR}/`.
+Delete all existing files in the alignfirst directory, ensure `references/` subdirectory exists, then fetch the latest versions:
+
+```bash
+rm -f {ALIGNFIRST_DIR}/*.md
+rm -f {ALIGNFIRST_DIR}/references/*
+mkdir -p {ALIGNFIRST_DIR}/references
+```
 
 ### If `vibe-flow/SKILL.md` exists at path **{VIBE_FLOW_DIR}** (old name):
 
-1. Create the new directory: `mkdir -p {SKILLS_DIR}/alignfirst`
+1. Create the new directory: `mkdir -p {SKILLS_DIR}/alignfirst/references`
 2. Fetch the latest versions into `{SKILLS_DIR}/alignfirst/`
 3. Delete the old vibe-flow directory: `rm -rf {VIBE_FLOW_DIR}`
 
 ### Files to fetch:
 
+Fetch into `{ALIGNFIRST_DIR}/`:
+
 - [SKILL.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/SKILL.md)
 - [README.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/README.md)
-- [spec-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/spec-protocol.md)
-- [plan-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/plan-protocol.md)
-- [do-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/do-protocol.md)
-- [description-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/description-protocol.md)
+
+Fetch into `{ALIGNFIRST_DIR}/references/`:
+
+- [spec-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/spec-protocol.md)
+- [plan-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/plan-protocol.md)
+- [aad-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/aad-protocol.md)
+- [description-protocol.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/skills/alignfirst/references/description-protocol.md)
 
 ## Step 3 - Update Technical Documentation Authoring Skill (if installed)
 
