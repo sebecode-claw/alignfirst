@@ -23,16 +23,16 @@ If you installed the skill files yourself (downloaded them or used a third-party
 I just installed the alignfirst skill. Please help me configure it:
 
 1. Create `_plans/.gitkeep` if it doesn't exist, and add `_plans/*` and `!_plans/.gitkeep` to `.gitignore` if needed.
-2. Check if `AGENTS.md` or `CLAUDE.md` exists. If one exists, use it. If neither exists, create `AGENTS.md`.
+2. Check if `AGENTS.md` or `CLAUDE.md` exists. If one exists, use it. If neither exists, create `AGENTS.md`. This file is our INSTRUCTION_FILE.
 3. Look at our git branches (`git branch -a`) to detect our ticket ID format (e.g., `ABC-###`, `PROJ-###`, or numeric).
    - If no pattern is found, ask me for our ticket ID format.
-4. If there is a pattern for our ticket ID, add this section in `AGENTS.md` or `CLAUDE.md`:
+4. If there is a pattern for our ticket ID, add this section in the INSTRUCTION_FILE:
 
    ## Ticket ID
 
    _Ticket ID_: Format is `{DETECTED_FORMAT}`. When not provided, deduce it from the branch name if possible—no need to confirm.
 
-5. Ensure it contains: "Always ignore the `_plans` directory when searching the codebase."
+5. Ensure the INSTRUCTION_FILE contains: "Always ignore the `_plans` directory when searching the codebase."
 6. Install commands by following the instructions in [install-commands.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-commands.md).
 ```
 
