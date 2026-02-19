@@ -57,20 +57,9 @@ The agent will discuss it with you first, then work directly on the codebase. At
 
 ## Additional Information
 
-### About Agent Skills
-
-Agent Skills is an [open standard](https://agentskills.io/) that works out of the box in Claude Code. Here are the documentations:
-
-- [Copilot in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
-- [Cursor](https://cursor.com/docs/context/skills)
-- [Claude Code](https://code.claude.com/docs/en/skills)
-- [Codex](https://developers.openai.com/codex/skills/)
-- [Gemini CLI](https://geminicli.com/docs/cli/skills/)
-- [Antigravity](https://antigravity.google/docs/skills)
-
 ### Rationale
 
-Specs, plans, and summaries must be written in well-organized (git-ignored) local files, because:
+Specs, plans, and summaries should be written in well-organized (git-ignored) local files, because:
 
 1. The context window is limited, the compression mechanism is opaque, and we want to be able to continue an unfinished task in a fresh session.
 2. It's a way to keep track of what was agreed upon with the agent and what has been done.
