@@ -11,6 +11,8 @@ Identify and state these values before starting the protocol.
 
 ---
 
+This is a 4-step protocol. Follow each step in order.
+
 ## 1. Investigate
 
 List all available **skills** and read each one whose description applies to any aspect of the task. In each skill, take the time to **read the relevant references**.
