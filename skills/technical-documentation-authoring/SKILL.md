@@ -1,6 +1,6 @@
 ---
 name: technical-documentation-authoring
-description: Create or augment technical documentation. Use when writing new skills, updating existing skills. Also use when modifying project documentation like AGENTS.md.
+description: "Create or augment technical documentation. Use when writing new skills, updating existing skills. Also use when modifying project documentation like AGENTS.md."
 license: CC0 1.0
 metadata:
   author: Paleo
