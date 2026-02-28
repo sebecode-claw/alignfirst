@@ -91,27 +91,25 @@ Fetch the following files into `{SKILLS_DIR}/alignfirst/references/`:
 ## Step 5 - Post-Install Setup
 
 1. Look at git branches (`git branch -a`) to detect the ticket ID format (e.g., `ABC-###`, `PROJ-###`, or numeric like `123`).
+   - If no pattern is found, ask the user for their ticket ID format:
+
+      > "I couldn't detect a ticket ID format from the branch names. Please provide the ticket ID format (e.g., "numeric", `ABC-###`, etc.)"
 
 2. Check if `AGENTS.md` exists:
 
-   - If it exists, ensure it contains: _"Always ignore the `_plans` directory when searching the codebase."_
-   - If it doesn't exist, create `AGENTS.md` with:
+   - **If it doesn't exist**, create `AGENTS.md` with a top-level heading `# AI Agent Instructions`.
+   - **If it already exists**, use it as-is.
+
+   Then, insert the following into `AGENTS.md` (skip any part that is already present):
+
+   - Add this line (anywhere near the top): _"Always ignore the `_plans` directory when searching the codebase."_
+   - If a ticket ID format was detected (or provided by the user), add this section:
 
      ```markdown
-     # AI Agent Instructions
-
-     Always ignore the `_plans` directory when searching the codebase.
-
      ## Ticket ID
 
      _Ticket ID_: Format is `{DETECTED_FORMAT}`. Use the ticket ID if explicitly provided. Otherwise, deduce it from the current branch name (no confirmation needed). If the branch name is unavailable, get it via `git branch --show-current`. Only ask the user as a last resort.
      ```
-
-     If no ticket format was detected, ask the user:
-
-     > "I couldn't detect a ticket ID format from the branch names. What format do you use? (e.g., "numeric", `ABC-###`, etc.)"
-
-     Wait for the user's response, then use it as the `{DETECTED_FORMAT}` value.
 
 3. Create `_plans/.gitkeep` if it doesn't exist:
 

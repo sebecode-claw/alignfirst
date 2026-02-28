@@ -19,22 +19,26 @@ If you installed the skill files yourself (downloaded them or used a third-party
 
 **Prompt to run:**
 
-```markdown
+````markdown
 I just installed the alignfirst skill. Please help me configure it:
 
 1. Create `_plans/.gitkeep` if it doesn't exist, and add `_plans/*` and `!_plans/.gitkeep` to `.gitignore` if needed.
 2. Check if `AGENTS.md` or `CLAUDE.md` exists. If one exists, use it. If neither exists, create `AGENTS.md`. This file is our INSTRUCTION_FILE.
 3. Look at our git branches (`git branch -a`) to detect our ticket ID format (e.g., `ABC-###`, `PROJ-###`, or numeric).
-   - If no pattern is found, ask me for our ticket ID format.
-4. If there is a pattern for our ticket ID, add this section in the INSTRUCTION_FILE:
+   - If no pattern is found, ask me for our ticket ID format:
 
-   ## Ticket ID
+      > "I couldn't detect a ticket ID format from the branch names. Please provide the ticket ID format (e.g., "numeric", `ABC-###`, etc.)"
 
-   _Ticket ID_: Format is `{DETECTED_FORMAT}`. When not provided, deduce it from the branch name if possible—no need to confirm.
+4. Insert the following into the INSTRUCTION_FILE (skip any part already present):
+   - Add this line: "Always ignore the `_plans` directory when searching the codebase."
+   - If a ticket ID format was found, add this section:
 
-5. Ensure the INSTRUCTION_FILE contains: "Always ignore the `_plans` directory when searching the codebase."
-6. Install commands by following the instructions in [install-commands.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-commands.md).
-```
+   > ## Ticket ID
+   >
+   > _Ticket ID_: Format is `{DETECTED_FORMAT}`. Use the ticket ID if explicitly provided. Otherwise, deduce it from the current branch name (no confirmation needed). If the branch name is unavailable, get it via `git branch --show-current`. Only ask the user as a last resort.
+
+5. Install commands by following the instructions in [install-commands.md](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/install-commands.md).
+````
 
 ## Usage
 
