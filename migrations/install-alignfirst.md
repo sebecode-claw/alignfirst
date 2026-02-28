@@ -104,10 +104,14 @@ Fetch the following files into `{SKILLS_DIR}/alignfirst/references/`:
 
      ## Ticket ID
 
-     _Ticket ID_: Format is `{DETECTED_FORMAT}`. When not provided, deduce it from the branch name if possible—no need to confirm.
+     _Ticket ID_: Format is `{DETECTED_FORMAT}`. Use the ticket ID if explicitly provided. Otherwise, deduce it from the current branch name (no confirmation needed). If the branch name is unavailable, get it via `git branch --show-current`. Only ask the user as a last resort.
      ```
 
-     If no ticket format was detected, ask the user for their format or skip the "Ticket ID" section.
+     If no ticket format was detected, ask the user:
+
+     > "I couldn't detect a ticket ID format from the branch names. What format do you use? (e.g., "numeric", `ABC-###`, etc.)"
+
+     Wait for the user's response, then use it as the `{DETECTED_FORMAT}` value.
 
 3. Create `_plans/.gitkeep` if it doesn't exist:
 
