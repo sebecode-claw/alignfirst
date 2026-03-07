@@ -15,7 +15,7 @@ This is a 4-step protocol. Follow each step in order.
 
 ## 1. Investigate
 
-Browse available **documentation** and **skills**. Read each document or skill whose description applies to any aspect of the task. In each skill, take the time to **read the relevant references**.
+Check your context for available **documentation** and **skills**. Read every document and skill relevant to any aspect of the task — this is not optional. For each skill, also **read its relevant references**.
 
 Explore the codebase. Take the time to understand how it currently works and what needs to change.
 
@@ -49,7 +49,7 @@ For **complex work** only (risk of context exhaustion):
 
 Write the summary file in TASK_DIR. Compose the filename using the current CYCLE_LETTER and the bumped FILE_NUMBER, then append `-AAD.summary.md`. For example, if the last file is `E5-plan-something.md`, create `E6-AAD.summary.md`. Do not overwrite an existing file.
 
-Start the summary with a header. Only include fields that have content — omit any field with nothing to list. Always exclude `alignfirst` from skills.
+Start the summary with a header. Omit any field with nothing to list. Always exclude `alignfirst` from skills.
 
 Example:
 

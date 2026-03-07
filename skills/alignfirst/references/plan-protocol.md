@@ -27,6 +27,8 @@ In order to generate implementation plans, you MUST follow this process:
 
 ## Phase 1. Investigation Phase
 
+Check your context for available **documentation** and **skills**. Read every document and skill relevant to any aspect of the task — this is not optional. For each skill, also **read its relevant references**.
+
 Investigate the codebase yourself, find the relevant source code, think carefully, take the time to understand how it currently works and what has to be done.
 
 Use the SPEC text as a starting point, but do not trust it blindly. Verify the current implementation and ensure the spec is still accurate. If you discover that an important design choice still needs to be made, or if the spec has issues, STOP AND ASK THE USER.
@@ -49,7 +51,7 @@ Evaluate if the work should be split into multiple specialized plans or handled 
 
 ### 2.2 Identify Relevant Documentation and Skills
 
-Identify which **documentation** and **skills** are relevant for the work:
+Identify which **documentation** and **skills** are relevant for the work. Omit if none apply.
 
 - List the documentation and skills that the implementing agent should read and follow. Always exclude `alignfirst` from skills.
 - For complex skills with reference files, identify specific files that should be loaded

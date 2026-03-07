@@ -21,6 +21,8 @@ The discussion phase is MANDATORY. Remember that you are a newcomer to this proj
 
 ## Phase 1. Investigation Phase
 
+Check your context for available **documentation** and **skills**. Read every document and skill relevant to any aspect of the task — this is not optional. For each skill, also **read its relevant references**.
+
 Investigate the codebase yourself, find the relevant source code, think carefully, take the time to understand how it currently works and what has to be done. If the Context7 MCP is available, feel free to use it.
 
 Always seek a clean break solution by default. Never consider backward compatibility unless explicitly requested.
@@ -47,7 +49,7 @@ You should ask questions freely to ensure you fully understand:
 
 After the user approves your proposal, write the specification in a markdown file in TASK_DIR. Compose the filename with the current CYCLE_LETTER and the next FILE_NUMBER, e.g. `A1-spec.md`. Do not overwrite an existing file.
 
-- Start the spec with required documentation files and skills (no explanation). List each doc file individually — never a folder. Always exclude `alignfirst` from skills. Example:
+- Start the spec with required documentation files and skills (no explanation). List each doc file individually — never a folder. Always exclude `alignfirst` from skills. Omit any field with nothing to list. Example:
 
   ```text
   # [{TICKET_ID}] Short Title
