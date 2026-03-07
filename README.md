@@ -31,7 +31,7 @@ I just installed the alignfirst skill. Please help me configure it:
    - Add this line: "Always ignore the `.plans` directory when searching the codebase."
    - If a ticket ID format was found, add this section:
 
-   > ## Ticket ID
+   > ## AlignFirst - Ticket ID
    >
    > _Ticket ID_: Format is `{DETECTED_FORMAT}`. Use the ticket ID if explicitly provided. Otherwise, deduce it from the current branch name (no confirmation needed). If the branch name is unavailable, get it via `git branch --show-current`. Only ask the user as a last resort.
 ````
