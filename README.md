@@ -50,6 +50,8 @@ I just installed the alignfirst skill. Please help me configure it:
    Use your docfront skill. Install docfront CLI in this project.
    ```
 
+   At the end, the agent will suggest available instructions: ignore them, we will handle that in the prompt of step 2.
+
 2. Give your agent **[this upgrade prompt](https://raw.githubusercontent.com/paleo/alignfirst/refs/heads/main/migrations/upgrade.md)**.
 3. Install the new alignfirst skill:
 
@@ -57,7 +59,7 @@ I just installed the alignfirst skill. Please help me configure it:
    npx skills add paleo/alignfirst --skill alignfirst --skill al --skill alplan --skill alspec --skill aldescription
    ```
 
-> **Note:** We recommend installing both the alignfirst and docfront skills globally so it's easier to update.
+> **Note:** We recommend installing both the alignfirst and docfront skills globally so they're easier to update.
 
 ## Usage
 
@@ -81,7 +83,7 @@ A specification can be written long before the implementation. The agent helps y
 
 The agent will discuss it with you, then write a `.plans/123/A1-spec.md` file.
 
-_Note: `123` is the ticket ID. If it can be deduced from the branch name, it will be. Otherwise the agent will ask you. `A1` means it's the first file of cycle A (files are organized by cycles)._
+_Note: `123` is the ticket ID. If it can be deduced from the branch name, it will be. Otherwise the agent will ask you. `A1` means it's the first file of cycle A (files are organized into cycles)._
 
 ### Generate Implementation Plan(s)
 
@@ -125,7 +127,6 @@ Specs, plans, and summaries should be written in well-organized (git-ignored) lo
 ### Is it "Spec-Driven Development" (SDD)?
 
 I don't know. If you have a clue, let me know, I'm interested.
-
 
 ## License
 
