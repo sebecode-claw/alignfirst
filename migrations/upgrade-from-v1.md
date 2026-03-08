@@ -44,6 +44,8 @@ Then, remove `.plans/.gitkeep` if it exists:
 rm -f .plans/.gitkeep
 ```
 
+Search the entire codebase for any references to `_plans` (in source code, configuration files, documentation, etc.) and replace them with `.plans`.
+
 ## Step 4 — Update `.gitignore`
 
 Remove all lines referencing `_plans` (e.g., `_plans/*`, `!_plans/.gitkeep`, `_plans`).
