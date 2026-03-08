@@ -10,7 +10,7 @@ AlignFirst enables AI agents to write the code you would write. It's distributed
 ## Installation
 
 ```bash
-npx skills add paleo/alignfirst --skill alignfirst --skill al --skill alplan --skill alspec --skill aldescription
+npx skills add paleo/alignfirst --global --skill alignfirst --skill al --skill alplan --skill alspec --skill aldescription
 ```
 
 > **Note:** We recommend installing these skills globally so they're easier to update.
@@ -56,7 +56,7 @@ I just installed the alignfirst skill. Please help me configure it:
 3. Install the new alignfirst skill:
 
    ```bash
-   npx skills add paleo/alignfirst --skill alignfirst --skill al --skill alplan --skill alspec --skill aldescription
+   npx skills add paleo/alignfirst --global --skill alignfirst --skill al --skill alplan --skill alspec --skill aldescription
    ```
 
 > **Note:** We recommend installing the alignfirst skills globally so they're easier to update. For the docfront skill, prefer a local/project installation.
