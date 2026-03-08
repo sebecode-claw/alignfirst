@@ -4,11 +4,17 @@ This migration converts a v1 installation (`_docs/` system) to a v3-ready state.
 
 > **Note**: Commands shown are Unix-style. Adapt to your OS if needed (e.g., PowerShell on Windows).
 
-## Step 1 — Delete AlignFirst / Vibe Flow Files
+## Step 1 — Delete AlignFirst / Vibe Flow / AI Workflow Files
 
 ```bash
-rm -rf _docs/alignfirst _docs/vibe-flow
+rm -rf _docs/alignfirst _docs/vibe-flow _docs/ai-workflow
 rm -f "_docs/Writing Documentation.md"
+```
+
+If `_docs/INDEX.md` exists, read it. If it contains any project-specific information (beyond generic AI Workflow index/boilerplate), preserve that information by adding it to `AGENTS.md` (or `CLAUDE.md`). Then delete the file:
+
+```bash
+rm -f _docs/INDEX.md
 ```
 
 ## Step 2 — Delete Command Files
@@ -61,7 +67,7 @@ Ensure the following line is present:
 If `AGENTS.md` (or `CLAUDE.md`) exists, edit it:
 
 1. Remove all references to `_docs/` files. This includes mentions of:
-   - `AlignFirst Guide.md` or `Vibe Flow Guide.md`
+   - `AlignFirst Guide.md`, `Vibe Flow Guide.md`, or `AI Workflow Guide.md`
    - `How to Write a Technical Specification.md`
    - `How to Write Implementation Plans.md`
    - `How to Write a Description.md`
@@ -90,7 +96,7 @@ Check if any `.md` files remain in `_docs/`.
 
 Summarize what was done:
 
-- AlignFirst/Vibe Flow v1 files removed
+- AlignFirst/Vibe Flow/AI Workflow v1 files removed
 - Command files removed (list which agent directories were cleaned)
 - `_plans` renamed to `.plans`
 - `.gitignore` updated

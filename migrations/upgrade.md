@@ -26,7 +26,7 @@ This prompt detects your current AlignFirst version (v1 or v2) and runs the appr
 
 ## Step 2 — Detect Version
 
-**Check for v1**: Look for `_docs/alignfirst/` or `_docs/vibe-flow/` directory.
+**Check for v1**: Look for `_docs/alignfirst/`, `_docs/vibe-flow/`, or `_docs/ai-workflow/` directory.
 
 **Check for v2**: Search for `alignfirst/SKILL.md` in any of these skills directories:
 
