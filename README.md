@@ -18,7 +18,7 @@ npx skills add paleo/alignfirst --global --skill alignfirst --skill al --skill a
 Now, configure your project. Give your agent this prompt:
 
 ````markdown
-I just installed the alignfirst skill. Please help me configure it:
+I just installed the alignfirst skill. Help me configure it:
 
 1. Create `.plans/` directory if it doesn't exist, and add `.plans` to `.gitignore` if needed.
 2. Check if `AGENTS.md` or `CLAUDE.md` exists. If one exists, use it. If neither exists, create `AGENTS.md`. This file is our INSTRUCTION_FILE.
