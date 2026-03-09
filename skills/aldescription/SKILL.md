@@ -3,6 +3,6 @@ name: aldescription
 description: "Write a description summarizing implemented work. Generates PR/MR descriptions from completed changes."
 ---
 
-Use the alignfirst skill. Help me write a description for the implemented work.
+Read `SKILL.md` and `references/description-protocol.md` in the alignfirst skill before doing anything else.
 
 **Mandatory: Do not use your plan mode. Execute the _description_ protocol from alignfirst.**
